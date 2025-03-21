@@ -29,10 +29,31 @@
     <div id="tab2">Tab2 content</div>
     <div id="tab3">Tab3 content</div>
 
+    <ul id="tabs2">
+      <li>
+        <a href="#tab21">Tab 1</a>
+      </li>
+      <li>
+        <a href="#tab22">Tab 2</a>
+      </li>
+      <li>
+        <a href="#tab23">Tab 3</a>
+      </li>
+    </ul>
+    <div id="tab21">Tab21 content</div>
+    <div id="tab22">Tab22 content</div>
+    <div id="tab23">Tab23 content</div>
+
     <script src="./src/tabzy.js"></script>
 
     <script>
-      const tabs = new Tabzy("#tabs");
+      const tabs = new Tabzy("#tabs", {
+        remember: true,
+      });
+
+      const tabs2 = new Tabzy("#tabs2", {
+        remember: true,
+      });
     </script>
   </body>
 </html>
